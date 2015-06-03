@@ -13,7 +13,7 @@ var mongoose = require('mongoose'),
 function validateLength(v) {
 	// a custom validation funciton for checking string length to be used by the model
 	return v.length <= 15;
-};
+}
 
 /**
  * Category Schema

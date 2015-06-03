@@ -95,7 +95,7 @@ exports.productByID = function(req, res, next, id) {
 
     Product.findById(id).exec(function(err, product) {
         if (err) return next(err);
-        if (!category) {
+        if (!product) {
             return res.status(404).send({
                 message: 'Product not found'
             });
